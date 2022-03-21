@@ -127,7 +127,7 @@ def modify(list, wlist, ulist):
             total_w += wlist[x]
 
     if total_w > 500:
-        real_total_u = total_u - (total_w - 500) * 20
+        real_total_u = total_u - ((total_w - 500) * 20)
     else:
         real_total_u = total_u
     return round(real_total_u, 3),round(total_u, 3) ,  round(total_w,3)
