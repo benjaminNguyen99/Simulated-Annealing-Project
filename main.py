@@ -23,14 +23,16 @@ for each in List:
 
 def createlist(n):
     return_list = []
+    tog = []
     for i in range (0, n):
         return_list.append(0)
     x = 0
     while x <20:
         randompoint = random.randrange(0, len(return_list))
-        if return_list[randompoint] == 0:
+        if not(randompoint in tog):
             return_list[randompoint] = 1
-        x+=1
+            tog.append(randompoint)
+            x += 1
     return return_list
 
 def main():
