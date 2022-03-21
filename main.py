@@ -130,7 +130,7 @@ def modify(list, wlist, ulist):
         real_total_u = total_u - ((total_w - 500) * 20)
     else:
         real_total_u = total_u
-    return round(real_total_u, 3),round(total_u, 3) ,  round(total_w,3)
+    return real_total_u, total_u ,  total_w
 
 if __name__ == "__main__":
     main()
